@@ -19,11 +19,10 @@ You will need to have installed on your machine
 - [Python 3](https://www.python.org/downloads/)
 
 
-Install all the contents of this repo in a subdirectory of your project. Either by downloading the repository directly or using git subdmodules.
-
+Install all the contents of this repo into a `docs` subdirectory of your project:
 ```sh
-git submodule add https://github.com/Matthieu-Beauchamp/CppReadTheDocs docs/
-git submodule update --init --recursive
+curl -J -L https://github.com/Matthieu-Beauchamp/CppReadTheDocs/archive/main.tar.gz | tar -z -x
+mv CppReadTheDocs-main docs
 ```
 
 # Quick start
