@@ -96,7 +96,7 @@ macro(generateConf)
     set(CONF_IN ${CMAKE_CURRENT_SOURCE_DIR}/source/conf.py.in)
     set(CONF_OUT ${CMAKE_CURRENT_SOURCE_DIR}/source/conf.py)
    
-    file(GLOB_RECURSE HEADERS ${DOCS_HEADER_INPUT_DIR}/*.h)
+    file(GLOB_RECURSE HEADERS ${DOCS_HEADER_INPUT_DIR}/*.h*)
     configure_file(${CONF_IN} ${CONF_OUT} @ONLY)
 endmacro()
 

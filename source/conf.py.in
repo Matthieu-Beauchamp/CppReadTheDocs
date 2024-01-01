@@ -14,11 +14,16 @@ release = '@DOCS_RELEASE@'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.mathjax', 'sphinx.ext.todo', 'breathe' ]
+extensions = ['sphinx.ext.mathjax', 'sphinx.ext.todo', 'sphinx.ext.graphviz', 'breathe' ]
 
 docs_headers = '@HEADERS@'.split(';')
 breathe_projects_source = {
     "@DOCS_TARGET_NAME@" : ( "", docs_headers )
+}
+
+breathe_domain_by_extension = {
+    "h" : "cpp",
+    "hpp" : "cpp",
 }
 
 templates_path = ['_templates']
