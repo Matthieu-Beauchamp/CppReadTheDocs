@@ -21,10 +21,8 @@ You will need to have installed on your machine
 
 Install all the contents of this repo in a subdirectory of your project. Either by downloading the repository directly or using git subdmodules.
 
-Git submodule:
 ```sh
-cd MyProject/
-git submodule add https://github.com/Matthieu-Beauchamp/Spirit-Doxygen docs/
+git submodule add https://github.com/Matthieu-Beauchamp/CppReadTheDocs docs/
 git submodule update --init --recursive
 ```
 
